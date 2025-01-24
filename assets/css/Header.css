@@ -11,20 +11,6 @@ bordered-header {
     justify-content: space-between;
     align-items: center;
 }
- /*Styling for the left image */
-.image-left img {
-    
-}
-/* Styling for navigation buttons */
-/* Container with background color */
-
-
-
-
-/* Styling for the right image */
-.image-right img {
-   
-}
 .evImg1{
     width: 200px; /* Standard passport photo width */
     height: 100px; /* Standard passport photo height */
@@ -35,34 +21,21 @@ bordered-header {
     margin: 10px auto; /* Centers the photo in its container */
     display: block; /* Ensures it behaves like a block element */
 }
-/* Responsive adjustments for mobile devices */
-@media (max-width: 768px) {
-    .bordered-header {
-       
-        text-align: center;
-    }
-    .image-left img, .image-right img {
-       
-    }
-}
 
-/* Full-width navigation container */
-.navigation-container {
-    background-color: #007bff; /* Blue background */
-    padding: 10px 0; /* Add spacing inside the navigation container */
-    width: 100% !important; /* Full width */
-    margin-bottom: 20PX;
-    align-items: center;
-}
+   
+
+
+
+
 
 /* Navigation menu styles */
 #navigation li {
     display: inline-block; /* Inline links */
-    margin-right: 20px; /* Space between menu items */
+    margin: 0, 10px; /* Space between menu items */
 }
 
 #navigation li a {
-    color: #ffffff; /* White text color */
+    color: #112957; /* White text color */
     text-decoration: none; /* Remove underline */
     padding: 10px 15px; /* Add spacing */
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
@@ -93,17 +66,20 @@ bordered-header {
     padding: 20px; /* Add internal spacing for content */
     background-color: #f9f9f9; /* Light gray background */
     border-radius: 10px; /* Optional rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/ /* Subtle shadow */ 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */ 
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
@@ -131,6 +107,7 @@ body {
 .section-tittle2 h2 {
     font-size: 36px;
     font-weight: 700;
+    white-space: nowrap !important;
     color: white; /* Make title stand out */
     margin-bottom: 20px;
 }
@@ -139,6 +116,7 @@ body {
     font-size: 18px;
     color: #dcdcdc; /* Lighter color for the description */
     line-height: 1.5;
+   
     max-width: 800px;
     margin: 0 auto;
 }
@@ -178,5 +156,93 @@ body {
     border-radius: 0 !important; /* Force border radius to zero */
     overflow: hidden; /* Ensure no content spills over if applied inside a container */
 }
+
+.nav-wrapper {
+    display: flex;
+    justify-content: center; /* Center-align the navigation bar */
+}
+
+/*---nav baar-----*/
+
+.main-menu {
+    display: flex;
+    justify-content: center; /* Center the navigation bar horizontally */
+    align-items: center; /* Center vertically if needed */
+    padding: 20px 0;
+}
+
+
+.section-tittle p {
+    margin-top: 10px;
+    font-size: 16px;  /* Adjust font size if needed */
+    justify-content: center;
+    align-items: center;
+}
+.section-tittle h2{
+    white-space: nowrap;
+}
+
+/* Ensure the event time and details stay in one line when collapsed */
+.card-header a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;  /* Prevent wrapping */
+}
+
+/* Style for when the event is collapsed */
+.card-header.collapsed a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.card-header.collapsed .btn-link::after {
+    font-size: 1.2em; /* Adjust arrow size if necessary */
+    margin-right: 10px; /* Space between arrow and time */
+    margin-left: 0; /* Remove left margin */
+}
+
+/* Ensure event time and details are aligned properly */
+.card-header span, .card-header p {
+    white-space: nowrap;  /* Prevent wrapping */
+}
+
+/* When the event is expanded, move the arrow below the time and center all */
+.card-header:not(.collapsed) a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card-header:not(.collapsed) .btn-link::after {
+    font-size: 1.2em; /* Adjust arrow size */
+    margin-top: 10px; /* Space the arrow below the time */
+    margin-left: 0; /* Align the arrow below */
+}
+
+/* Event details remain centered when expanded */
+.card-body {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

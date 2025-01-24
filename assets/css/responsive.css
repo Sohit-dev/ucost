@@ -13,20 +13,291 @@
 
  
 /* Tablet desktop :768px. */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 991px) {
+    #header-image {
+        width: 68%;
+        height: auto;
+        display: block;
+        border-radius: 0 !important;
+        overflow: hidden;
+    }
 
+    #header-image {
+        width: 100%;  /* Ensure the image takes the full width of its container */
+        height: auto; /* Maintain the aspect ratio */
+    }
+
+    .header-area {
+        width: 100%;  /* Make sure the parent container takes full width */
+        overflow: hidden; /* Hide any overflow if needed */
+    }
+    .container-fluid{
+    width: 100%;
+    padding-right: 80px;
+    padding-left: -83px;
+    margin-right: auto;
+    margin-left: -100px;
+}
+
+.accordion .nav-tabs .nav-item {
+    flex-wrap: nowrap;
+}
 
 }
+
+
 
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
+    
+        img {
+            max-width: 90% !important; /* Ensure the image scales within the container */
+            height: auto;
+            border: 2px solid #a3a3a3; /* Slightly modify the border */
+            border-radius: 8px; /* Adjust border radius */
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Adjust box-shadow */
+        }
+ 
+}
+ 
 
- 
-}
- 
+
 /* Large Mobile :480px. */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-.container {width:450px}
- 
+@media only screen and (min-width: 375px) and (max-width: 480px) {
+.container {
+    width:450px
 }
+.header-area .main-header .main-menu ul li a {
+    color: #112957;
+    font-weight: 400;
+    padding: 39px 27px;
+    display: block;
+    font-size: 13px;
+
+}
+ 
+#header-image {
+    max-width: 100%; /* Full width for smaller screens */
+    border-radius: 0px; /* Smaller border-radius for compact look */
+}
+#navigation li a {
+    color: #112957;
+    text-decoration: none;
+    padding: 7px 8px;
+   
+
+}
+
+
+ul {
+    margin: -50px;
+    padding: 0px;
+}
+
+img {
+    max-width: 100% !important;
+    height: auto;
+    border: 2px solid #a3a3a3;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.h2, h2 {
+    font-size: 25px;
+    MARGIN-LEFT: 36% !important;
+    font-weight: 700 !important;
+}
+
+
+.container-fluid {
+width: 100%;
+padding-right: 17px;
+padding-left: 0px;
+margin-right: auto;
+margin-left: auto;
+}
+.section-tittle h2 {
+font-size: 16px;
+line-height: 1.6;
+}
+.accordion .nav-tabs .nav-item {
+font-size: 15px;
+}
+
+.main-menu {
+display: flex;
+justify-content: center; /* Center the navigation bar horizontally */
+align-items: center; /* Center vertically if needed */
+padding: 20px 0;
+}
+.section-tittle p {
+margin-top: 10px;
+font-size: 16px;  /* Adjust font size if needed */
+justify-content: center;
+align-items: center;
+}
+
+.accordion .accordion-wrapper .card-header h2 a::after {
+right: -70px;
+}
+
+
+
+.accordion .accordion-wrapper {
+padding: 22px 100px 45px 20px;
+}
+
+.card-body {
+width: 100%; /* Make the card body span the full width */
+text-align: center; /* Center the text horizontally */
+margin: 0 auto; /* Ensure horizontal centering of the text block */
+padding: 10px; /* Add padding for better readability */
+box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+.gallery-area .gallery-box .single-gallery .gallery-img {
+background-size: cover;
+background-repeat: no-repeat; 
+height: 150px;
+}
+.logo-area .row {
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible; /* Ensure it stays visible */
+flex-wrap: nowrap;
+
+}
+.single-logo img {
+width: 100%;  /* Ensure the image takes the full width of its container */
+height: auto;  /* Maintain the aspect ratio */
+}
+.row {
+display: flex;
+flex-wrap: wrap; /* Ensure the columns wrap correctly */
+justify-content: center;
+}
+
+.row {
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+margin-right: 0px;
+margin-left: 0px;
+}
+
+}
+@media (min-width: 481px) and  (max-width: 575px){
+    #navigation li a {
+        color: #112957;
+        text-decoration: none;
+        padding: 7px 8px;
+       
+    }
+
+
+    ul {
+        margin: -50px;
+        padding: 0px;
+    }
+
+    img {
+        max-width: 100% !important;
+        height: auto;
+        border: 2px solid #a3a3a3;
+        border-radius: 8px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .h2, h2 {
+        font-size: 25px;
+        MARGIN-LEFT: 36% !important;
+        font-weight: 700 !important;
+    }
+
+   
+.container-fluid {
+    width: 100%;
+    padding-right: 17px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.section-tittle h2 {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.accordion .nav-tabs .nav-item {
+    font-size: 15px;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: center; /* Center the navigation bar horizontally */
+    align-items: center; /* Center vertically if needed */
+    padding: 20px 0;
+}
+.section-tittle p {
+    margin-top: 10px;
+    font-size: 16px;  /* Adjust font size if needed */
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion .accordion-wrapper .card-header h2 a::after {
+    right: -70px;
+}
+
+
+
+.accordion .accordion-wrapper {
+    padding: 22px 100px 45px 20px;
+}
+
+.card-body {
+    width: 100%; /* Make the card body span the full width */
+    text-align: center; /* Center the text horizontally */
+    margin: 0 auto; /* Ensure horizontal centering of the text block */
+    padding: 10px; /* Add padding for better readability */
+    box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+.gallery-area .gallery-box .single-gallery .gallery-img {
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height: 150px;
+}
+.logo-area .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible; /* Ensure it stays visible */
+    flex-wrap: nowrap;
+    
+}
+.single-logo img {
+    width: 100%;  /* Ensure the image takes the full width of its container */
+    height: auto;  /* Maintain the aspect ratio */
+}
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Ensure the columns wrap correctly */
+    justify-content: center;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+}
+
+
+
+
+
